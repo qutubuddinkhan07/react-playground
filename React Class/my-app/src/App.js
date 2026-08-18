@@ -1,16 +1,13 @@
-// Function Based Component (FBC)
-// function App() {
-//   return <h1>Welcome to FCB</h1>;
-// }
+import React from "react";
+import Naruto from "./assets/naruto.png";
 
-// named export
-// export { App };
-
-// default export
-// export default App;
-
-// Arrow Function Component (AFC)
-let App = () => {
-  return <h1>I am arrow function</h1>;
+const App = () => {
+  return (
+    <div>
+      <h1>Hello world</h1>
+      <img src={Naruto} alt="Example" className="demo-img" />
+    </div>
+  );
 };
+
 export default App;

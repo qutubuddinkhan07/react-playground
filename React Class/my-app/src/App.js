@@ -1,12 +1,13 @@
-import React from "react";
-import Naruto from "./assets/naruto.png";
-
 const App = () => {
+  let x = {
+    backgroundColor: "red",
+    color: "white",
+  };
+
   return (
-    <div>
-      <h1>Hello world</h1>
-      <img src={Naruto} alt="Example" className="demo-img" />
-    </div>
+    <>
+      <h1 style={x}>React</h1>
+    </>
   );
 };
 

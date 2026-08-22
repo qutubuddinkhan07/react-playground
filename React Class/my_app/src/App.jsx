@@ -19,7 +19,7 @@ const App = () => {
       </section>
 
       {/* //! Using "public" Path */}
-      <section className="bg-blue-600 h-screen w-full flex justify-center items-center">
+      <section className="bg-violet-600 h-screen w-full flex justify-center items-center">
         <h1 className="bg-mist-300 font-extrabold text-[150px] mb-4 rounded-l-2xl">
           Hinata Hyuga
         </h1>
@@ -34,7 +34,7 @@ const App = () => {
       </section>
 
       {/* //! using "import" Path */}
-      <section className="bg-blue-600 h-screen w-full flex justify-center items-center">
+      <section className="bg-pink-900 h-screen w-full flex justify-center items-center">
         <h1 className="bg-mist-300 font-extrabold text-[150px] mb-4 rounded-l-2xl">
           Hinata Hyuga
         </h1>

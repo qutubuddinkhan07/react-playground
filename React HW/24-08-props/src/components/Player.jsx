@@ -4,16 +4,16 @@ import Ronaldo from "../assets/ronaldo.jpg";
 import alnassr from "../assets/alnassr.png";
 
 const Player = () => {
-  let players = {
-    name: "Cristiano Ronaldo",
-    image: Ronaldo,
-    jersey: 7,
-    club: "Al-Nassr FC",
-    club_img: alnassr,
+  let player = {
+    player_name: "Cristiano Ronaldo",
+    player_image: Ronaldo,
+    player_jersey: 7,
+    player_club: "Al-Nassr FC",
+    player_club_img: alnassr,
   };
   return (
     <div>
-      <Card players={players} />
+      <Card player={player} />
     </div>
   );
 };

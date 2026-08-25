@@ -74,14 +74,115 @@ import React from "react";
 // export default Child;
 
 //! Use of Map()
-const Child = ({ carList }) => {
-  return (
-    <ul>
-      {carList.map((val, index) => {
-        return <li key={index}>{val}</li>;
-      })}
-    </ul>
-  );
+// const Child = ({ carList }) => {
+//   return (
+//     <ul>
+//       {carList.map((val, index) => {
+//         return <li key={index}>{val}</li>;
+//       })}
+//     </ul>
+//   );
+// };
+
+// export default Child;
+
+//! Display function
+//? Way: 1
+// const Child = (props) => {
+//   console.log(props);
+//   return (
+//     <div>
+//       <h1>{props.func()}</h1>
+//     </div>
+//   );
+// };
+
+//? Way: 2
+// const Child = (props) => {
+//   console.log(props);
+//   return (
+//     <div>
+//       <h1>{props.func()}</h1>
+//     </div>
+//   );
+// };
+
+// export default Child;
+
+// export default Child;
+
+//! props.children
+
+// const Child = (props) => {
+//   // console.log(props); // {children: Array(2)}
+//   let { children } = props;
+//   return (
+//     <div>
+//       {/* {props.children} */}
+//       {children}
+//     </div>
+//   );
+// };
+
+// export default Child;
+
+//! Default props
+//? way: 1
+
+// const Child = (props) => {
+//   let { username, age = 10 } = props;
+//   return (
+//     <div>
+//       <h1>{username}</h1>
+//       <p>{age}</p>
+//     </div>
+//   );
+// };
+
+// export default Child;
+
+//? way: 2
+// const Child = (props) => {
+//   let { username, age } = props;
+//   return (
+//     <div>
+//       <h1>{username}</h1>
+//       <p>{age || 10}</p>
+//     </div>
+//   );
+// };
+
+// export default Child;
+
+//! Passing variables as array or objects in props
+// const Child = (props) => {
+//   console.log(props); // {student: {…}, technologies: Array(3)}
+//   let {
+//     student: { institute, fee, mode },
+//     technologies: [t1, t2, t3],
+//     children,
+//   } = props;
+//   return (
+//     <div>
+//       <h1>Institute: {institute}</h1>
+//       <h1>Fee: {fee}</h1>
+//       <h1>Mode: {mode}</h1>
+//       <h1>
+//         Technologies: {t1},{t2},{t3}
+//       </h1>
+//       {children}
+//     </div>
+//   );
+// };
+
+// export default Child;
+
+//! Props are immutable
+
+const Child = (props) => {
+  console.log(props.username); // Naruto
+  props.username = "Hinata";
+  return <div>{props.username}</div>;
 };
 
 export default Child;

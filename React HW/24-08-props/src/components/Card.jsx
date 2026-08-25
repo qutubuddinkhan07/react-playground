@@ -4,7 +4,7 @@ const Card = ({ players }) => {
   let { name, image, jersey, club, club_img } = players;
   return (
     <>
-      <div className="h-96 w-64 overflow-hidden flex flex-col relative items-center border-2 rounded-3xl border-amber-500 bg-linear-to-b from-emerald-950 via-emerald-900 to-emerald-900 shadow-xl shadow-emerald-300">
+      <div className="h-96 w-64 overflow-hidden flex flex-col relative items-center border-2 rounded-3xl border-amber-500 bg-linear-to-b from-[#e12615] via-[#a30a28] to-[#e12615] shadow-xl shadow-emerald-300">
         {/* ghost jersey number, bleeding off the top edge */}
         <div className="absolute -top-6 inset-x-0 text-center">
           <span className="text-9xl select-none leading-non text-emerald-800">

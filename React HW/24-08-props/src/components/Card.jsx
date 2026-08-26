@@ -8,6 +8,7 @@ const Card = (props) => {
       player_jersey,
       player_club,
       player_club_img,
+      goals_scored = 977,
     },
   } = props;
   return (
@@ -46,6 +47,17 @@ const Card = (props) => {
         <p className="relative mt-2 text-sm font-semibold uppercase tracking-widest text-amber-300">
           No. {player_jersey}
         </p>
+
+        {/* ---------------- DFAULT PROPS THROUGH OBJECT DESTRUCTURING AND OR OPERATOR -------------- */}
+        {/* goals stat */}
+        <div className="relative mt-4 flex flex-col items-center rounded-2xl border-2 border-amber-500 bg-emerald-950/60 px-6 py-2 min-w-20">
+          <span className="text-3xl font-bold leading-none text-white">
+            {goals_scored || 1000}
+          </span>
+          <span className="mt-1 text-[10px] font-semibold uppercase tracking-widest text-amber-300">
+            Goals
+          </span>
+        </div>
 
         <div className="flex-1" />
 

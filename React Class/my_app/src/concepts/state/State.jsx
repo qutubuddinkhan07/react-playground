@@ -1,12 +1,12 @@
 import React from "react";
-import File1 from "./File1";
-import Counter from "./Counter";
+import FBC from "./FBC/FBC";
+import CBC from "./CBC/CBC";
 
 const State = () => {
   return (
-    <div>
-      {/* <File1 /> */}
-      <Counter />
+    <div className="flex h-screen w-full bg-mist-300 items-center justify-center">
+      {/* <CBC /> */}
+      <FBC />
     </div>
   );
 };

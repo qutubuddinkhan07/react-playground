@@ -56,7 +56,7 @@ This repository serves as my learning notebook for React. Each concept is either
 └── README.md
 ```
 
-_(Update this section as new dated task folders or concept folders get added.)_
+_(Updating this section as new dated task folders or concept folders get added.)_
 
 ## 🚀 Getting Started
 

@@ -29,10 +29,10 @@ const InputFieldTask = () => {
   };
 
   const getBackgroundColor = (length) => {
-    if (length >= 12) return "pink";
+    if (length >= 12) return "violet";
     if (length >= 8) return "blue";
     if (length >= 4) return "red";
-    return "white";
+    return "black";
   };
   return (
     <div>
@@ -42,7 +42,7 @@ const InputFieldTask = () => {
         className=""
         placeholder="Enter username"
       />
-      <h1 style={{ backgroundColor: getBackgroundColor(username.length) }}>
+      <h1 style={{ color: getBackgroundColor(username.length) }}>
         {username}
       </h1>
     </div>

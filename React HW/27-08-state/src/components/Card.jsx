@@ -11,7 +11,7 @@ const Card = () => {
     setLikes(likes + 1);
     setLiked(true);
     setBlink(true);
-    setTimeout(() => setBlink(false), 350);
+    setTimeout(() => setBlink(false), 200);
   };
 
   const handleDoubleClick = () => {

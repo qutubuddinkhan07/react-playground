@@ -6,8 +6,9 @@ const Form = () => {
   const usernameRef = useRef(null);
   const paswordRef = useRef(null);
 
-  const handleChange = (field) => (e) => {
-    formDetails.current[field] = e.target.value;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    formDetails.current[name] = value;
   };
 
   const onSubmit = (e) => {
@@ -35,8 +36,9 @@ const Form = () => {
           <input
             type="text"
             id="username"
+            name="username"
             defaultValue={formDetails.current.username}
-            onChange={handleChange("username")}
+            onChange={handleChange}
             ref={usernameRef}
             className="w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
             placeholder="Enter username"
@@ -52,11 +54,12 @@ const Form = () => {
           <input
             type="password"
             id="password"
+            name="password"
             placeholder="******"
             ref={paswordRef}
             defaultValue={formDetails.current.password}
             className="w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
-            onChange={handleChange("password")}
+            onChange={handleChange}
             autoComplete="current-password"
           />
         </div>

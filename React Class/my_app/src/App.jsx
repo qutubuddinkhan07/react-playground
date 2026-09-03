@@ -1,6 +1,7 @@
 import ConditionalRendering from "./concepts/conditional_rendering/ConditionalRendering";
 import ContextAPI from "./concepts/contextAPI/ContextAPI";
 import CSS from "./concepts/css/CSS";
+import Form from "./concepts/forms/Form";
 import HOCMain from "./concepts/higherOrderComponent/HOCMain";
 import Props from "./concepts/props/Props";
 import PropsDrilling from "./concepts/propsDrilling/PropsDrilling";
@@ -18,6 +19,7 @@ const App = () => {
       {/* <ContextAPI /> */}
       {/* <HOCMain /> */}
       {/* <ReferenceMain /> */}
+      <Form />
     </>
   );
 };

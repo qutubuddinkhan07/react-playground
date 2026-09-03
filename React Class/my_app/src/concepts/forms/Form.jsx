@@ -1,10 +1,12 @@
 import React from "react";
 import Controlled from "./Controlled";
+import StateUpdate from "./StateUpdate";
 
 const Form = () => {
   return (
     <div>
-      <Controlled />
+      {/* <Controlled /> */}
+      <StateUpdate />
     </div>
   );
 };

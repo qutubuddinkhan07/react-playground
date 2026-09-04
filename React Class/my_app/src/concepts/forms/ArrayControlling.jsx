@@ -22,9 +22,9 @@ const ArrayControlling = () => {
       <button onClick={incArr}>Increase</button>
       <button onClick={decArr}>Decrease</button>
       <h1>
-        {arr.map((val, index) => {
-          return <span key={index}>{val} </span>;
-        })}
+        {arr && arr.length > 0
+          ? arr.map((val, index) => <span key={index}>{val} </span>)
+          : "No elements are there"}
       </h1>
     </div>
   );

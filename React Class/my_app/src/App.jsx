@@ -3,6 +3,7 @@ import ContextAPI from "./concepts/contextAPI/ContextAPI";
 import CSS from "./concepts/css/CSS";
 import Form from "./concepts/forms/Form";
 import HOCMain from "./concepts/higherOrderComponent/HOCMain";
+import LifeCycleMethodMain from "./concepts/lifeCycleMethods/LifeCycleMethodMain";
 import Props from "./concepts/props/Props";
 import PropsDrilling from "./concepts/propsDrilling/PropsDrilling";
 import ReferenceMain from "./concepts/ref/ReferenceMain";
@@ -19,7 +20,10 @@ const App = () => {
       {/* <ContextAPI /> */}
       {/* <HOCMain /> */}
       {/* <ReferenceMain /> */}
-      <Form />
+      {/* <Form /> */}
+
+      {/* //! Life Cycle methods example */}
+      <LifeCycleMethodMain />
     </>
   );
 };

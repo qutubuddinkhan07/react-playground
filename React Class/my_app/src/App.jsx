@@ -8,6 +8,7 @@ import Props from "./concepts/props/Props";
 import PropsDrilling from "./concepts/propsDrilling/PropsDrilling";
 import ReferenceMain from "./concepts/ref/ReferenceMain";
 import State from "./concepts/state/State";
+import UseEffectMain from "./concepts/useEffect/UseEffectMain";
 
 const App = () => {
   return (
@@ -23,7 +24,9 @@ const App = () => {
       {/* <Form /> */}
 
       {/* //! Life Cycle methods example */}
-      <LifeCycleMethodMain />
+      {/* <LifeCycleMethodMain /> */}
+
+      <UseEffectMain />
     </>
   );
 };

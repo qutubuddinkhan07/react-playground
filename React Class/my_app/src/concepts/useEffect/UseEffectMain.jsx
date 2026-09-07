@@ -1,11 +1,13 @@
 import Qspider from "./Qspider";
+import Task from "./Task";
 import UseEffect from "./UseEffect";
 
 const UseEffectMain = () => {
   return (
     <div>
       {/* <UseEffect /> */}
-      <Qspider />
+      {/* <Qspider /> */}
+      <Task />
     </div>
   );
 };

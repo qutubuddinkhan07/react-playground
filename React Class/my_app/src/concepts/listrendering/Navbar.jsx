@@ -17,7 +17,7 @@ const Navbar = (props) => {
           onChange={(e) => setSearchInp(e.target.value)}
           className="bg-white text-lg px-1.5 rounded-lg outline-none focus:ring-2 focus:ring-pink-900 focus:ring-offset-2"
         />
-        <label htmlFor="search">
+        <label htmlFor="search" className="cursor-pointer">
           <FaSearch />
         </label>
       </div>

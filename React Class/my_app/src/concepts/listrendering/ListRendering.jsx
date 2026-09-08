@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Card from "./Card";
+import axios from "axios";
 
 // const ListRendering = () => {
 //   let cars = [
@@ -117,14 +118,31 @@ import Card from "./Card";
 
 //! ============= Fetching users from API ================
 //! Card
-const ListRendering = ({searchInp}) => {
+const ListRendering = ({ searchInp }) => {
   const [data, setData] = useState(null);
 
-  function fetchData() {
-    fetch("https://api.github.com/users")
-      .then((val) => val.json())
-      .then((res) => setData(res))
-      .catch((err) => console.log("Error fetching users: " + err));
+  //! ===== USING FETCH() ===============
+  // function fetchData() {
+  //   fetch("https://api.github.com/users")
+  //     .then((val) => val.json())
+  //     .then((res) => setData(res))
+  //     .catch((err) => console.log("Error fetching users: " + err));
+  // }
+
+  //! ===== USING ASYNC FUNCTION() ===============
+  // async function fetchData() {
+  //   let res = await fetch("https://api.github.com/users");
+  //   let data1 = await res.json();
+  //   setData(data1);
+  // }
+
+  //! ===== USING ASYNC FUNCTION() ===============
+  async function fetchData() {
+    let res = await axios.get("https://api.github.com/users");
+    // console.log(res); // {data: Array(30), status: 200, statusText: '', headers: AxiosHeaders$1, config: {…}, …}
+    let { data } = res;
+    console.log(data); // [{}......]
+    setData(data);
   }
 
   // Filter runs automatically whenever data or searchInp changes

@@ -117,26 +117,41 @@ import Card from "./Card";
 
 //! ============= Fetching users from API ================
 //! Card
-const ListRendering = () => {
+const ListRendering = ({searchInp}) => {
   const [data, setData] = useState(null);
 
   function fetchData() {
     fetch("https://api.github.com/users")
       .then((val) => val.json())
-      .then((res) => setData(res));
+      .then((res) => setData(res))
+      .catch((err) => console.log("Error fetching users: " + err));
   }
 
+  // Filter runs automatically whenever data or searchInp changes
+  const filteredData = data
+    ? data.filter((user) =>
+        user.login.toLowerCase().includes((searchInp || "").toLowerCase()),
+      )
+    : [];
+
   useEffect(() => {
-    fetchData();
+    const timer = setTimeout(() => {
+      fetchData();
+    }, 2000);
+
+    return () => clearTimeout(timer); // Clean up timeout on unmount
   }, []);
+
   return (
-    <div className="flex gap-2 flex-wrap items-center justify-center">
-      {data ? (
-        data.map((user, index) => {
-          return <Card details={user} key={index} />;
+    <div className="min-h-screen w-full p-9 flex gap-2 flex-wrap items-center justify-center">
+      {!data ? (
+        <h1>Wait, data is being fetched...</h1>
+      ) : filteredData.length > 0 ? (
+        filteredData.map((user) => {
+          return <Card details={user} key={user.id} />; // ✅ Using user.id instead of index
         })
       ) : (
-        <h1>Nothing to display</h1>
+        <h1>No users found matching "{searchInp}"</h1>
       )}
     </div>
   );

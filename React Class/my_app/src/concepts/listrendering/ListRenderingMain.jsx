@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import ListRendering from "./ListRendering";
+import Navbar from "./Navbar";
 
 const ListRenderingMain = () => {
+  const [searchInp, setSearchInp] = useState("");
+
   return (
-    <div className="h-full w-full p-9 bg-amber-500 flex gap-2 flex-wrap items-center justify-center">
-      <ListRendering />
+    <div className="min-h-screen w-full bg-amber-500">
+      <Navbar searchInp={searchInp} setSearchInp={setSearchInp} />
+      <ListRendering searchInp={searchInp} />
     </div>
   );
 };

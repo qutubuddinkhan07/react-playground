@@ -5,8 +5,10 @@ import Form from "./concepts/forms/Form";
 import HOCMain from "./concepts/higherOrderComponent/HOCMain";
 import LifeCycleMethodMain from "./concepts/lifeCycleMethods/LifeCycleMethodMain";
 import ListRenderingMain from "./concepts/listrendering/ListRenderingMain";
+import PortalMain from "./concepts/portal/PortalMain";
 import Props from "./concepts/props/Props";
 import PropsDrilling from "./concepts/propsDrilling/PropsDrilling";
+import PureComponents from "./concepts/pureComponents/PureComponents";
 import ReferenceMain from "./concepts/ref/ReferenceMain";
 import State from "./concepts/state/State";
 import UseEffectMain from "./concepts/useEffect/UseEffectMain";
@@ -31,7 +33,13 @@ const App = () => {
       {/* <UseEffectMain /> */}
 
       {/* List Rendering */}
-      <ListRenderingMain />
+      {/* <ListRenderingMain /> */}
+
+      {/* Portal */}
+      {/* <PortalMain /> */}
+
+      {/* Pure Components */}
+      <PureComponents />
     </>
   );
 };

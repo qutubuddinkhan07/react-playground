@@ -11,7 +11,9 @@ import PropsDrilling from "./concepts/propsDrilling/PropsDrilling";
 import PureComponents from "./concepts/pureComponents/PureComponents";
 import ReferenceMain from "./concepts/ref/ReferenceMain";
 import State from "./concepts/state/State";
+import UseCallbackMain from "./concepts/useCallback/UseCallbackMain";
 import UseEffectMain from "./concepts/useEffect/UseEffectMain";
+import UseMemoMain from "./concepts/useMemo/UseMemoMain";
 
 const App = () => {
   return (
@@ -39,7 +41,14 @@ const App = () => {
       {/* <PortalMain /> */}
 
       {/* Pure Components */}
-      <PureComponents />
+      {/* <PureComponents /> */}
+
+      {/* //! Performance optimization */}
+      {/* <UseCallbackMain /> */}
+
+      {/* //! useMemo() --> perfomance optimization [memoize a value] */}
+      {/* //! Used for expensive calculation */}
+      <UseMemoMain />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import Qspider from "./Qspider";
 import Task from "./Task";
+import UnmountingExample from "./UnmountingExample";
 import UseEffect from "./UseEffect";
 
 const UseEffectMain = () => {
@@ -7,7 +8,10 @@ const UseEffectMain = () => {
     <div>
       {/* <UseEffect /> */}
       {/* <Qspider /> */}
-      <Task />
+      {/* <Task /> */}
+
+      {/* //! Example of UnmountingExample */}
+      <UnmountingExample />
     </div>
   );
 };

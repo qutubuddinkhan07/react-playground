@@ -11,6 +11,7 @@ import Props from "./concepts/props/Props";
 import PropsDrilling from "./concepts/propsDrilling/PropsDrilling";
 import PureComponents from "./concepts/pureComponents/PureComponents";
 import ReferenceMain from "./concepts/ref/ReferenceMain";
+import RoutingMain from "./concepts/routing/RoutingMain";
 import State from "./concepts/state/State";
 import UseCallbackMain from "./concepts/useCallback/UseCallbackMain";
 import UseEffectMain from "./concepts/useEffect/UseEffectMain";
@@ -42,7 +43,7 @@ const App = () => {
       {/* <ErrorBoundaryMain /> */}
 
       {/* Portal */}
-      <PortalMain />
+      {/* <PortalMain /> */}
 
       {/* Pure Components */}
       {/* <PureComponents /> */}
@@ -53,6 +54,9 @@ const App = () => {
       {/* //! useMemo() --> perfomance optimization [memoize a value] */}
       {/* //! Used for expensive calculation */}
       {/* <UseMemoMain /> */}
+
+      {/* //! Routing  */}
+      <RoutingMain />
     </>
   );
 };

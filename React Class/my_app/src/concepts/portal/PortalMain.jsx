@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from "react";
+import Portal from "./Portal";
+import Task from "./Task";
 
 const PortalMain = () => {
-  return (
-    <div>PortalMain</div>
-  )
-}
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
-export default PortalMain
+  return (
+    <>
+      {/* <Portal /> */}
+      <button onClick={toggle}>Sign up {isOpen ? <Task /> : <></>}</button>
+    </>
+  );
+};
+
+export default PortalMain;

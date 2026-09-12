@@ -1,7 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
+import ReactDOM from "react-dom";
 
-export default class Portal extends Component {
-  render() {
-    return <div>Portal</div>;
-  }
-}
+const Portal = () => {
+  return ReactDOM.createPortal(
+    <h1>Working on Portals</h1>,
+    document.getElementById("portal"),
+  );
+};
+
+export default Portal;
+
+/*
+OUTPUT
+Working on Portal
+(in the O/P, <h1> tag is inserted into div with id="portal")
+*/

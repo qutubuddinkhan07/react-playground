@@ -1,6 +1,7 @@
 import ConditionalRendering from "./concepts/conditional_rendering/ConditionalRendering";
 import ContextAPI from "./concepts/contextAPI/ContextAPI";
 import CSS from "./concepts/css/CSS";
+import ErrorBoundaryMain from "./concepts/errorBoundary/ErrorBoundaryMain";
 import Form from "./concepts/forms/Form";
 import HOCMain from "./concepts/higherOrderComponent/HOCMain";
 import LifeCycleMethodMain from "./concepts/lifeCycleMethods/LifeCycleMethodMain";
@@ -37,8 +38,11 @@ const App = () => {
       {/* List Rendering */}
       {/* <ListRenderingMain /> */}
 
+      {/* //! Error Boundary */}
+      {/* <ErrorBoundaryMain /> */}
+
       {/* Portal */}
-      {/* <PortalMain /> */}
+      <PortalMain />
 
       {/* Pure Components */}
       {/* <PureComponents /> */}
@@ -48,7 +52,7 @@ const App = () => {
 
       {/* //! useMemo() --> perfomance optimization [memoize a value] */}
       {/* //! Used for expensive calculation */}
-      <UseMemoMain />
+      {/* <UseMemoMain /> */}
     </>
   );
 };

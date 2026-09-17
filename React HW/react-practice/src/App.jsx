@@ -7,33 +7,37 @@ import IndexComponentArchitecture from "./Tasks/17-08-component-architecture/Ind
 import IndexWebpage from "./Tasks/20-08-nav-webpage/IndexWebpage";
 import IndexProps from "./Tasks/24-08-props/IndexProps";
 import IndexState from "./Tasks/27-08-state/IndexState";
+import IndexProductStore from "./Tasks/13-09-productStore/IndexProductStore";
 
 const App = () => {
   return (
     <Fragment>
       {/* //!  Component architecture */}
-      {/* //!  <IndexComponentArchitecture /> */}
+      {/* <IndexComponentArchitecture /> */}
 
       {/* //!  Webpage */}
-      {/* //!  <IndexWebpage /> */}
+      {/* <IndexWebpage /> */}
 
       {/* //!  Props */}
-      {/* //!  <IndexProps /> */}
+      {/* <IndexProps /> */}
 
       {/* //!  State */}
-      <IndexState />
+      {/* <IndexState /> */}
 
       {/* //!  useRef */}
-      {/* //!  <IndexUseRef /> */}
+      {/* <IndexUseRef /> */}
 
       {/* //!  useState */}
-      {/* //!  <IndexUseState /> */}
+      {/* <IndexUseState /> */}
 
       {/* //!  Portal */}
-      {/* //!  <IndexPortal /> */}
+      {/*  <IndexPortal /> */}
 
       {/* //!  useEffect */}
-      {/* //!  <UseEffectTask /> */}
+      {/* <UseEffectTask /> */}
+
+      {/* --- PRODUCT STORE --- */}
+      <IndexProductStore />
     </Fragment>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./component/Nav";
 
 const WebPage = () => {
@@ -21,12 +21,14 @@ const WebPage = () => {
       <section className="py-5">
         <div className="container">
           <h2 className="text-center mb-4">Our Features</h2>
-          <div className="row g-4" >
+          <div className="row g-4">
             <div className="colo-md-4">
               <div className="card h-100 shadow-sm">
                 <div className="card-body text-center">
                   <h5 className="card-title">Feature One</h5>
-                  <p className="card-text text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p className="card-text text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
                 </div>
               </div>
             </div>
@@ -34,7 +36,9 @@ const WebPage = () => {
               <div className="card h-100 shadow-sm">
                 <div className="card-body text-center">
                   <h5 className="card-title">Feature One</h5>
-                  <p className="card-text text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p className="card-text text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
                 </div>
               </div>
             </div>
@@ -42,7 +46,9 @@ const WebPage = () => {
               <div className="card h-100 shadow-sm">
                 <div className="card-body text-center">
                   <h5 className="card-title">Feature One</h5>
-                  <p className="card-text text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p className="card-text text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
                 </div>
               </div>
             </div>

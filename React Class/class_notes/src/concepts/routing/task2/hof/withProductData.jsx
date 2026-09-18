@@ -4,7 +4,7 @@ import axios from "axios";
 //! Shared fetch logic
 //? WrappedComponent is not some special React concept — it's a plain variable that happens to hold your inline arrow function. You could rename the parameter to banana and nothing would change
 const withProductData = (WrappedComponent, filterFn) => {
-  console.log("name: ", WrappedComponent.name);
+  // console.log("name: ", WrappedComponent.name);
 
   const ComponentWithData = (props) => {
     const [data, setData] = useState(null);
@@ -30,7 +30,7 @@ const withProductData = (WrappedComponent, filterFn) => {
     WrappedComponent.displayName || WrappedComponent.name || "Component"
   })`;
 
-  console.log("displayName: ", ComponentWithData.displayName);
+  // console.log("displayName: ", ComponentWithData.displayName);
   return ComponentWithData;
 };
 

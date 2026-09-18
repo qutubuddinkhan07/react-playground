@@ -16,6 +16,7 @@ import State from "./concepts/state/State";
 import UseCallbackMain from "./concepts/useCallback/UseCallbackMain";
 import UseEffectMain from "./concepts/useEffect/UseEffectMain";
 import UseMemoMain from "./concepts/useMemo/UseMemoMain";
+import UseReducerMain from "./concepts/useReducer/UseReducerMain";
 
 const App = () => {
   return (
@@ -56,7 +57,10 @@ const App = () => {
       {/* <UseMemoMain /> */}
 
       {/* //! Routing  */}
-      <RoutingMain />
+      {/* <RoutingMain /> */}
+
+      {/* //! Use of useReducer - hook */}
+      <UseReducerMain />
     </>
   );
 };

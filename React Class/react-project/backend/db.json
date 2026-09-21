@@ -1,0 +1,18 @@
+{
+  "student": [
+    {
+      "id": "L1gs__Nbv_g"
+    },
+    {
+      "studentName": "sdfsd",
+      "studentEmail": "qutubuddinkhan8261@gmail.com",
+      "studentAge": "12",
+      "studentGrade": "Freshman",
+      "studentImg": "https://www.istockphoto.com/photos/photo-image-art",
+      "studentPassword": "123",
+      "studentAgreeTerms": true,
+      "id": "hatJAuq6xsQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

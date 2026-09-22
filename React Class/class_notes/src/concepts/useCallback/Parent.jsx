@@ -6,6 +6,15 @@ const Parent = () => {
   const [age, setAge] = useState(0);
   const [salary, setSalary] = useState(0);
 
+  // const incAge = () => {
+  //   setAge(age + 1);
+  // };
+
+  // const incSalary = () => {
+  //   setSalary(salary + 1000);
+  // };
+
+  //! Using useCallback()
   const incAge = useCallback(() => {
     setAge(age + 1);
   }, [age]);

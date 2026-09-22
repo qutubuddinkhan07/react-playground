@@ -1,17 +1,14 @@
 {
   "student": [
     {
-      "id": "L1gs__Nbv_g"
-    },
-    {
-      "studentName": "sdfsd",
+      "studentName": "CR7",
       "studentEmail": "qutubuddinkhan8261@gmail.com",
       "studentAge": "12",
       "studentGrade": "Freshman",
-      "studentImg": "https://www.istockphoto.com/photos/photo-image-art",
+      "studentImg": "https://c.ndtvimg.com/cristiano-ronaldo-reuters_625x300_1530764546324.jpg",
       "studentPassword": "123",
       "studentAgreeTerms": true,
-      "id": "hatJAuq6xsQ"
+      "id": "aBASAgU0iSg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

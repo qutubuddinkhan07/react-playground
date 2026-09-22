@@ -57,10 +57,10 @@ const App = () => {
       {/* <UseMemoMain /> */}
 
       {/* //! Routing  */}
-      {/* <RoutingMain /> */}
+      <RoutingMain />
 
       {/* //! Use of useReducer - hook */}
-      <UseReducerMain />
+      {/* <UseReducerMain /> */}
     </>
   );
 };

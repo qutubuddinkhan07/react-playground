@@ -1,14 +1,14 @@
 //! ===== CLASS BASED COMPONENT =======
 // import React, { Component, PureComponent } from "react";
 
-// // export default class PureChild extends Component {
-// //   render() {
-// //     console.log("PureChild component rendering.");
-// //     return <div>PureChild -- {this.props.name}</div>;
-// //   }
-// // }
+// export default class PureChild extends Component {
+//   render() {
+//     console.log("PureChild component rendering.");
+//     return <div>PureChild -- {this.props.name}</div>;
+//   }
+// }
 
-// //! With PureComponent
+//! With PureComponent
 // export default class PureChild extends PureComponent {
 //   render() {
 //     console.log("PureChild component rendering.");

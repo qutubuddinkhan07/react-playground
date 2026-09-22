@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const BASE_URL = "http://localhost:5000/student";
 
-const CreateStudent = () => {
+const UpdateStudent = () => {
+  const { id } = useParams(); // to fetch the id from the url
+
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -28,18 +30,28 @@ const CreateStudent = () => {
   };
 
   const handleSubmit = async (e) => {
-    const notify = toast("Student created");
+    const notify = toast("Student updated");
     e.preventDefault();
     try {
-      const response = await axios.post(`${BASE_URL}`, formData);
-      // console.log(response);
-      // console.log("Submitted Form Data:", formData);
+      const response = await axios.put(`${BASE_URL}/${id}`, formData);
+      //   console.log(response);
+      //   console.log("Submitted Form Data:", formData);
       notify;
       navigate("/view-all");
     } catch (err) {
       console.error("Some error occurred:", err);
     }
   };
+
+  const fetchData = async () => {
+    const { data } = await axios.get(BASE_URL);
+    const result = data.find((val) => val.id == id);
+    setFormData(result);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <div className="container d-flex justify-content-center align-items-center min-vh-100 py-5">
@@ -48,7 +60,7 @@ const CreateStudent = () => {
         style={{ maxWidth: "480px", width: "100%" }}
       >
         <div className="text-center mb-4">
-          <h2 className="fw-bold text-primary">Create Student</h2>
+          <h2 className="fw-bold text-primary">Update Student</h2>
           <p className="text-muted small">
             Enter student information to register a new profile
           </p>
@@ -172,29 +184,11 @@ const CreateStudent = () => {
             </div>
           </div>
 
-          <div className="mb-4 form-check">
-            <input
-              type="checkbox"
-              className="form-check-input"
-              id="studentAgreeTerms"
-              name="studentAgreeTerms"
-              checked={formData.studentAgreeTerms}
-              onChange={handleChange}
-              required
-            />
-            <label
-              className="form-check-label text-muted small"
-              htmlFor="studentAgreeTerms"
-            >
-              I agree to the terms and data processing policy
-            </label>
-          </div>
-
           <button
             type="submit"
             className="btn btn-primary w-100 py-2 fw-semibold rounded-3"
           >
-            Submit Profile
+            Update Profile
           </button>
         </form>
       </div>
@@ -202,4 +196,4 @@ const CreateStudent = () => {
   );
 };
 
-export default CreateStudent;
+export default UpdateStudent;

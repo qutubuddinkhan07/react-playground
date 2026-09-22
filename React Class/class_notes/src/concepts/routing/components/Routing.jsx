@@ -18,13 +18,14 @@ import Layout from "./Layout";
 
 // const Routing = () => {
 //   return (
-//! Before using Layout
+//     // ! Before using Layout
 // <div>
 //   <BrowserRouter>
-//     <Nav />  {/* Removing this from here and using it in <Layout/> component /> */}
+//     <Nav />
+//     {/* Removing this from here and using it in <Layout/> component /> */}
 //     <Routes>
 //       <Route path="/" element={<Home />} />
-//       {/* <Route path="/product" element={<Product />} /> */}
+//       <Route path="/product" element={<Product />} />
 //       <Route path="/about" element={<About />} />
 //       <Route path="/order-summary" element={<Order />} />
 
@@ -41,29 +42,28 @@ import Layout from "./Layout";
 //   </BrowserRouter>
 // </div>
 
-//! after using Layout
-//     <div>
-//       <BrowserRouter>
-//         <Routes>
-//           <Route path="/" element={<Layout />}>
-//             <Route index element={<Home />} />
-//             {/* <Route path="/product" element={<Product />} /> */}
-//             <Route path="/about" element={<About />} />
-//             <Route path="/order-summary" element={<Order />} />
+// // ! after using Layout
+// <div>
+//   <BrowserRouter>
+//     <Routes>
+//       <Route path="/" element={<Layout />}>
+//         <Route index element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/order-summary" element={<Order />} />
 
-//             {/* //! Nested Routing Concept */}
-//             <Route path="/product" element={<Product />}>
-//               <Route index element={<Cart />} />
-//               <Route path="cart" element={<Cart />} />
-//               <Route path="wishlist" element={<Wishlist />} />
-//             </Route>
-//           </Route>
-
-//           {/* //! Universal route to handle the not showing anything on the page */}
-//           <Route path="*" element={<PageNotFound />} />
-//         </Routes>
-//       </BrowserRouter>
-//     </div>
+//         {/* //! Nested Routing Concept */}
+//         <Route path="/product" element={<Product />}>
+//           <Route index element={<Cart />} />
+//           <Route path="/product" element={<Product />} />
+//           <Route path="cart" element={<Cart />} />
+//           <Route path="wishlist" element={<Wishlist />} />
+//         </Route>
+//       </Route>
+//       {/* //! Universal route to handle the not showing anything on the page */}
+//       <Route path="*" element={<PageNotFound />} />/
+//     </Routes>
+//   </BrowserRouter>
+// </div>
 //   );
 // };
 

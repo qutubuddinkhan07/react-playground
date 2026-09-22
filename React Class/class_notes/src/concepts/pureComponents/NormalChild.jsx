@@ -3,7 +3,7 @@
 
 // export default class NormalChild extends Component {
 //   render() {
-//     // console.log(this.props); // {name: 'John'}
+//     console.log(this.props); // {name: 'John'}
 //     console.log("NormalChild component rendering.");
 //     return (
 //       <div>

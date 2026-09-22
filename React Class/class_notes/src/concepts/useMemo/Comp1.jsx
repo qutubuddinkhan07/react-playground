@@ -37,7 +37,8 @@ const Comp1 = () => {
     let i = 0;
     while (i < 1000000000) i++;
     return count1 % 2 == 0 ? "Even Number" : "Odd Number";
-  }, []);
+    // }, []);
+  }, [count1]);
 
   return (
     <div>

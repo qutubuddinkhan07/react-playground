@@ -1,0 +1,47 @@
+{
+  "student": [
+    {
+      "email": "qutubuddinkhan8261@gmail.com",
+      "password": "123",
+      "id": "JxpGul4ez-A"
+    },
+    {
+      "email": "qutubuddinkhan8261@gmail.com",
+      "password": "123",
+      "id": "eHgF90hbjqE"
+    },
+    {
+      "email": "qutubuddinkhan8261@gmail.com",
+      "password": "123",
+      "id": "8gwJALyO-4c"
+    },
+    {
+      "email": "qutubuddinkhan8261@gmail.com",
+      "password": "123",
+      "id": "rYeYMDaReDw"
+    },
+    {
+      "email": "qutubuddinkhan82613@gmail.com",
+      "password": "1234",
+      "id": "5r5JkauMsdA"
+    }
+  ],
+  "login": [
+    {
+      "email": "qutubuddinkhan8261@gmail.com",
+      "password": "123",
+      "id": "Az6WQgXrim0"
+    },
+    {
+      "email": "qutubuddinkhan8261@gmail.com",
+      "password": "123",
+      "id": "WItYwKRCNO4"
+    },
+    {
+      "email": "qutubuddinkhan8261@gmail.com",
+      "password": "123",
+      "id": "NdWAOGMo__A"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

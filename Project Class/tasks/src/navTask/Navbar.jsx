@@ -11,7 +11,7 @@ import { IoMdMail } from "react-icons/io";
 const Navbar = () => {
   const navList = ["home", "pages", "portfolio", "blog", "elements"];
   return (
-    <div className="flex h-screen w-full justify-between items-center flex-col">
+    <div className="flex h-screen w-full gap-7 items-center flex-col">
       <nav className="bg-[#734AF6] flex h-[78px] w-full justify-between px-5 items-center font-semibold text-white">
         <div className="flex gap-1 items-center">
           <span className="block w-4 bg-green-400 h-4 flex items-center justify-center">

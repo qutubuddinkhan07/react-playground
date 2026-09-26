@@ -8,6 +8,7 @@ import IndexWebpage from "./Tasks/20-08-nav-webpage/IndexWebpage";
 import IndexProps from "./Tasks/24-08-props/IndexProps";
 import IndexState from "./Tasks/27-08-state/IndexState";
 import IndexProductStore from "./Tasks/13-09-productStore/IndexProductStore";
+import ReduxToolKitConcept from "./Tasks/25-09-rtk/ReduxToolKitConcept";
 
 const App = () => {
   return (
@@ -37,7 +38,9 @@ const App = () => {
       {/* <UseEffectTask /> */}
 
       {/* --- PRODUCT STORE --- */}
-      <IndexProductStore />
+      {/* <IndexProductStore /> */}
+
+      <ReduxToolKitConcept />
     </Fragment>
   );
 };

@@ -3,6 +3,8 @@ import Home from "../pages/Home";
 import Layout from "../components/Layout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import PrivateRoute from "./PrivateRoute";
+import Products from "../pages/Products";
 
 const routes = createBrowserRouter([
   {
@@ -12,6 +14,15 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        element: <PrivateRoute />,
+        children: [
+          {
+            path: "/products",
+            element: <Products />,
+          },
+        ],
       },
     ],
   },

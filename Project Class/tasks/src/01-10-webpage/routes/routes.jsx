@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import Products from "../pages/Products";
+import { ProductProvider } from "../context/ProductContext";
 
 const routes = createBrowserRouter([
   {
@@ -19,20 +20,26 @@ const routes = createBrowserRouter([
         element: <PrivateRoute />,
         children: [
           {
-            path: "/products",
-            element: <Products />,
+            element: <ProductProvider />,
+            children: [
+              {
+                path: "/products",
+                element: <Products />,
+              },
+            ],
           },
         ],
       },
+
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
     ],
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
   },
 ]);
 
